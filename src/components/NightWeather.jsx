@@ -8,7 +8,7 @@ import { RiCelsiusLine } from "react-icons/ri";
 
 export const NightWeather = ({ weatherData }) => {
   const { name } = weatherData;
-  const temp = weatherData?.main?.temp_min || "";
+  const temp = weatherData.temp_min || "";
   return (
     <div
       className=" w-[420px] h-[780px] flex flex-col items-center justify-center p-3 rounded-3xl opacity-80"

@@ -8,9 +8,9 @@ import { MdPersonOutline } from "react-icons/md";
 import { RiCelsiusLine } from "react-icons/ri";
 
 export const DayWeather = ({ weatherData }) => {
-  const { name } = weatherData;
+  const { name = "Tokyo" } = weatherData;
 
-  const temp = weatherData?.main?.temp_max || "";
+  const temp = weatherData.temp_max || "";
 
   return (
     <div className="bg-white w-[420px] h-[780px] flex flex-col items-center justify-center p-3 rounded-3xl opacity-80">
